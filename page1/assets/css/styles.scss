@@ -1,0 +1,134 @@
+$general-font: 'Open Sans Condensed', sans-serif;
+$total: 100%;
+$blanco: #fff;
+$font-color1:#c45f5d;
+$font-color2:#c4c4c4;
+$font-title: 'Open Sans', sans-serif;
+$margin-nulo: 0;
+$border:#86c4e9;
+$transition:all 0.2s ease-in-out;
+$hoverjpg:url('/../assets/images/hoverbuttom.jpg') no-repeat left;;
+        
+
+body{
+	font-family: $general-font;
+	margin: 0;
+	box-sizing: content-box;
+
+}
+.none{
+	display: none;
+}
+.subtitle{
+	color: $blanco;
+	font-family: $font-title;
+	margin: 0 0 44px;
+	@media screen and (max-width: 768px){
+		padding: 40px;
+		margin: $margin-nulo;
+	}
+}
+.cabecera{
+	height: 102px;
+	width: $total;
+	margin: $margin-nulo auto;
+	background: $blanco;
+	text-align: center;
+	padding-top: 24px;
+	h1{
+		color: $font-color1;
+		font-family: $font-title;
+		margin: 0 0 4px;
+	}
+	h2{
+		color: $font-color2;
+		font-family: $font-title;
+		margin: $margin-nulo;
+	}
+	@media screen and (max-width: 768px){
+		margin: 0 auto 80px;
+	}
+}
+.content{
+	height: 600px;
+	width: $total;
+	background: url('/../assets/images/background.png') no-repeat center;
+	background-size: cover;
+	padding: 100px 0 0 66px ;
+
+	@media screen and (max-width: 768px){
+		padding: 100px 0 0;
+		text-align: center;
+
+	}
+
+}
+.objetivos{
+	font-family: $general-font;
+	font-size: 6em;
+	color: $font-color1;
+    font-weight: lighter;
+    margin: $margin-nulo;
+    @media screen and (max-width: 768px){
+		font-size: 5em;
+	}
+
+}
+.buttoms{
+    width: 85%;
+    height: 349px;
+	a{
+		width: 54px;
+		height: 63px;
+		border: 1px solid $border;
+		margin: 16px;
+		
+		background: url('/../assets/images/nohoverbuttom.jpg') no-repeat left;
+		float: left;
+		-webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        transition: $transition;
+    }
+	
+    @media screen and (max-width: 768px){
+        	width: 100%;
+        	margin: $margin-nulo auto;
+        	text-align: center;
+        }
+
+	@for $e from 1 through 4{
+		.buttom#{$e}.huge {
+			width: 330px;
+			padding: 0 0 0 50px;
+			-webkit-transition: $transition;
+            -moz-transition: $transition;
+            -o-transition: $transition;
+            transition: $transition;
+            background: #fff $hoverjpg;
+
+            @media screen and (max-width: 768px){
+            	width: 100%;
+            	margin:5px $margin-nulo;
+            	padding: $margin-nulo;
+            }
+		}
+	}
+	a:hover{
+		background: $hoverjpg ;
+		-webkit-transition: $transition;
+        -moz-transition: $transition;
+        -o-transition: $transition;
+        transition: $transition;
+	}
+	@for $i from 1 through 4{
+		.section-#{$i} {
+			display:none ;
+			&.open{
+				display:block;
+			};
+		}
+		
+	}
+
+}

@@ -1,0 +1,130 @@
+$general-font: 'Open Sans Condensed', sans-serif;
+$total: 100%;
+$blanco: #fff;
+$font-color1:#c45f5d;
+$font-color2:#c4c4c4;
+$font-title: 'Open Sans', sans-serif;
+$margin-nulo: 0;
+$border:#86c4e9;
+$transition:all 0.2s ease-in-out;
+$hoverjpg:url('/../assets/images/hoverbuttom.jpg') no-repeat left;
+$image-buttoms: no-repeat bottom/100%;
+        
+
+body{
+	font-family: $general-font;
+	margin: 0;
+	box-sizing: content-box;
+
+}
+.none{
+	display: none;
+}
+.subtitle{
+	color: $blanco;
+	font-family: $font-title;
+	margin: 0 0 44px;
+}
+.cabecera{
+		height: 102px;
+		width: $total;
+		margin: $margin-nulo auto;
+		background: $blanco;
+		text-align: center;
+		padding-top: 24px;
+	h1{
+		color: $font-color1;
+		font-family: $font-title;
+		margin: 0 0 4px;
+	}
+	h2{
+		color: $font-color2;
+		font-family: $font-title;
+		margin: $margin-nulo;
+	}
+}
+.content{
+		height: $total;
+		width: 98%;
+		text-align: center;
+		margin: $margin-nulo auto;
+	.content-title{
+		border-bottom: 1px solid #cfcfcf;
+	}
+	.objetivos{
+		font-family: $general-font;
+		color: $font-color1;
+	    font-weight: lighter;
+	    margin: 0.2em $margin-nulo ;
+	    font-size: 4em;
+}
+
+}
+.buttoms{
+	margin: $margin-nulo auto;
+	text-align: center;
+	padding: 4em 0;
+	a{
+		width: 240px;
+		height: 263px;
+		border: 1px solid #cfcfcf;
+		border-radius: 10px;
+		display:inline-block;
+		margin:1em 1em;
+		padding: 0.4em;
+		font-family: $font-title;
+
+	}
+}
+.buttoms{
+
+	@for $i from 1 through 4 {
+		#section-#{$i} {
+			opacity: 0.5;
+			text-decoration: none;
+			color: #5e5c58;
+			-webkit-transition: $transition;
+	        -moz-transition: $transition;
+	        -o-transition: $transition;
+	        transition: $transition;
+			&:target{
+				opacity: 1;
+				border: 5px solid #c45f5d;
+				-webkit-transition: $transition;
+		        -moz-transition: $transition;
+		        -o-transition: $transition;
+		        transition: $transition;
+			}
+			
+		}
+	}
+	
+	p{
+		margin: 0.2em;
+		font-size: 4em;
+		line-height: 40px;
+	}
+	span{
+		font-size: 1.1em;
+		line-height: 5px;
+	}
+	#section-1{
+		background: url('/../assets/images/point1.png')$image-buttoms;
+		&.activated{
+			opacity: 1;
+			border: 5px solid #c45f5d;
+		}
+	}
+	#section-2{
+		background: url('/../assets/images/point2.png')$image-buttoms;
+	}
+	#section-3{
+		background: url('/../assets/images/point3.png')$image-buttoms;
+	}
+	#section-4{
+		background: url('/../assets/images/point4.png')$image-buttoms;
+	}
+
+
+}
+

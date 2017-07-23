@@ -1,0 +1,150 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0;
+  box-sizing: content-box; }
+
+.none {
+  display: none; }
+
+.subtitle {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 44px; }
+  @media screen and (max-width: 768px) {
+    .subtitle {
+      padding: 40px;
+      margin: 0; } }
+
+.cabecera {
+  height: 102px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  padding-top: 24px; }
+  .cabecera h1 {
+    color: #c45f5d;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 0 4px; }
+  .cabecera h2 {
+    color: #c4c4c4;
+    font-family: "Open Sans", sans-serif;
+    margin: 0; }
+  @media screen and (max-width: 768px) {
+    .cabecera {
+      margin: 0 auto 80px; } }
+
+.content {
+  height: 600px;
+  width: 100%;
+  background: url("/../assets/images/background.png") no-repeat center;
+  background-size: cover;
+  padding: 100px 0 0 66px; }
+  @media screen and (max-width: 768px) {
+    .content {
+      padding: 100px 0 0;
+      text-align: center; } }
+
+.objetivos {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 6em;
+  color: #c45f5d;
+  font-weight: lighter;
+  margin: 0; }
+  @media screen and (max-width: 768px) {
+    .objetivos {
+      font-size: 5em; } }
+
+.buttoms {
+  width: 85%;
+  height: 349px; }
+  .buttoms a {
+    width: 54px;
+    height: 63px;
+    border: 1px solid #86c4e9;
+    margin: 16px;
+    background: url("/../assets/images/nohoverbuttom.jpg") no-repeat left;
+    float: left;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  @media screen and (max-width: 768px) {
+    .buttoms {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
+  .buttoms .buttom1.huge {
+    width: 330px;
+    padding: 0 0 0 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff url("/../assets/images/hoverbuttom.jpg") no-repeat left; }
+    @media screen and (max-width: 768px) {
+      .buttoms .buttom1.huge {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0; } }
+  .buttoms .buttom2.huge {
+    width: 330px;
+    padding: 0 0 0 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff url("/../assets/images/hoverbuttom.jpg") no-repeat left; }
+    @media screen and (max-width: 768px) {
+      .buttoms .buttom2.huge {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0; } }
+  .buttoms .buttom3.huge {
+    width: 330px;
+    padding: 0 0 0 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff url("/../assets/images/hoverbuttom.jpg") no-repeat left; }
+    @media screen and (max-width: 768px) {
+      .buttoms .buttom3.huge {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0; } }
+  .buttoms .buttom4.huge {
+    width: 330px;
+    padding: 0 0 0 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff url("/../assets/images/hoverbuttom.jpg") no-repeat left; }
+    @media screen and (max-width: 768px) {
+      .buttoms .buttom4.huge {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0; } }
+  .buttoms a:hover {
+    background: url("/../assets/images/hoverbuttom.jpg") no-repeat left;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .buttoms .section-1 {
+    display: none; }
+    .buttoms .section-1.open {
+      display: block; }
+  .buttoms .section-2 {
+    display: none; }
+    .buttoms .section-2.open {
+      display: block; }
+  .buttoms .section-3 {
+    display: none; }
+    .buttoms .section-3.open {
+      display: block; }
+  .buttoms .section-4 {
+    display: none; }
+    .buttoms .section-4.open {
+      display: block; }
